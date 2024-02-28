@@ -196,30 +196,31 @@
             </div>
             <div class="right-side">
               <div class="topic-text">Personal Details</div>
-            <form action="#">
+
+            <form action="https://script.google.com/macros/s/AKfycbxS19_4VypEHKAPyX6ZEmKd1aZBNMOOdzq8pggM85oIgxOVFN9gztPheAw1KN-VyCTl/exec" method='post' name="details-form">
               <div class="input-box">
-                <input type="text" placeholder="Enter your name">
+                <input type="text" name="name" placeholder="Enter your name">
               </div>
               <div class="input-box">
-                <input type="text" placeholder="Enter your email">
+                <input type="email" name="email" placeholder="Enter your email">
               </div>
               <div class="input-box">
-                  <input type="text" placeholder="Gender">
+                  <input type="text" name="gender" placeholder="Gender">
               </div>
               <div class="input-box option">
-                  <input type="date" placeholder="Date Of Birth">
+                  <input type="date" name="date" placeholder="Date Of Birth">
               </div>
               <div class="input-box">
-                  <input type="text" placeholder="City,Address">
+                  <input type="text" name="address" placeholder="City,Address">
               </div>
               <div class="input-box">
-                  <input type="text" placeholder="Brand Name ">
+                  <input type="text" name="brandName" placeholder="Brand Name ">
               </div>
               <div class="input-box">
-                  <input type="text" placeholder="Insta Id">
+                  <input type="text" name="instaId" placeholder="Insta Id">
               </div>
               <div class="input-box">
-                  <select class="input-box" name="Experience">
+                  <select class="input-box" name="experience" >
                       <option disabled selected value="">Experience</option>
                       <option class="optionr" value="volvo1">Upcoming Designers Upto 0-3 Experience</option>
                       <option class="optionr" value="v3">Emerging Designers Upto 0-9 Year Experience</option>
@@ -227,12 +228,13 @@
                   </select>
               </div>
               <div class="button">
-                <input type="button" value="Submit" >
+                <input type="submit" value="Submit" id="Submit" >
               </div>
             </form>
           </div>
           </div> 
         </div>
+   <script src="Google Sheet.js"></script>
 
     </body>
    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

@@ -725,3 +725,10 @@
     background-color:white;
     color: #DFC158;
 }
+
+/* Media query for screens below 500px width */
+@media screen and (max-width: 1500px) {
+    body {
+        width: 150%;
+    }
+}
