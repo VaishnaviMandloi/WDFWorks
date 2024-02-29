@@ -13,7 +13,7 @@
     height: 1182px;
     position: relative;
     padding: 69px;
-/*     margin: 0 2.5vw; */
+    margin: 0 2.5vw;
 }
 
 .desktop .overlap {
@@ -227,13 +227,12 @@
 
 .desktop .navbar {
     position: absolute;
-    width: 100%;
+    width: 1458px;
     height: 52px;
     top: 459px;
     left: -7px;
     background-color: #dfc158;
     border-radius: 8px;
-    
 }
 
 .desktop .text-wrapper-10 {
@@ -755,7 +754,7 @@
 /* Media query for screens above 1500px width */
 /* @media screen and (min-width: 1500px) {
     .desktop .div {
-        margin-left: 6.5rem;
+        margin-left: 2.5rem;
     }
 } */
 
@@ -763,11 +762,17 @@
     .desktop .div {
         margin-left: 15rem;
     }
+    .desktop .navbar {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 2000px) {
     .desktop .div {
         margin-left: 20rem;
+    }
+    .desktop .navbar {
+        width: 1458px;
     }
 }
 
