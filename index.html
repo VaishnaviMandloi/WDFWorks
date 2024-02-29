@@ -52,54 +52,54 @@
                 </div>
                 <div class="component">
                     <div class="ellipse-wrapper">
-                        <input type="checkbox" name="event1" value="event1">
+                        <input type="checkbox" name="event1" id="check1" value="WAR OF CREATIVE MINDS MARCH GOA">
                     </div>
                 </div>
                 <div class="overlap-wrapper">
                     <div class="ellipse-wrapper">
-                        <input type="checkbox" name="event2" value="event2">
+                        <input type="checkbox" name="event2" value="WAR OF CREATIVE MINDS MARCH MUMBAI">
                     </div>
                 </div>
                 <div class="overlap-3">
                     <div class="component-2">
-                        <div class="ellipse-wrapper"><input type="checkbox" name="event3" value="event3"></div>
+                        <div class="ellipse-wrapper"><input type="checkbox" name="event3" value="NATIONAL DESIGNER AWADS MAY GOA"></div>
                     </div>
                     <div class="component-3">
-                        <div class="ellipse-wrapper"><input type="checkbox" name="event4" value="event4"></div>
+                        <div class="ellipse-wrapper"><input type="checkbox" name="event4" value="NATIONAL DESIGNER AWADS MAY CHENNAI"></div>
                     </div>
                     <div class="component-4">
-                        <div class="ellipse-wrapper"><input type="checkbox" name="event5" value="event5"></div>
+                        <div class="ellipse-wrapper"><input type="checkbox" name="event5" value="NATIONAL DESIGNER AWADS MAY INDORE"></div>
                     </div>
                 </div>
                 <div class="component-5">
-                    <div class="ellipse-wrapper"><input type="checkbox" name="event6" value="event6"></div>
+                    <div class="ellipse-wrapper"><input type="checkbox" name="event6" value="NATIONAL HANDLOOM DAY AUGUST U.P, Agra"></div>
                 </div>
                 <div class="component-6">
-                    <div class="ellipse-wrapper"><input type="checkbox" name="event7" value="event7"></div>
+                    <div class="ellipse-wrapper"><input type="checkbox" name="event7" value="NATIONAL HANDLOOM DAY AUGUST M.P, Bhopal"></div>
                 </div>
                 <div class="component-7">
                     <div class="ellipse-wrapper">
-                        <input type="checkbox" name="event8" value="event8">
+                        <input type="checkbox" name="event8" value="NATIONAL HANDLOOM DAY AUGUST TELANGANA, Hyderabad">
                     </div>
                 </div>
                 <div class="overlap-4">
                     <div class="component-2">
                         <div class="ellipse-wrapper">
-                            <input type="checkbox" name="event9" value="event9">
+                            <input type="checkbox" name="event9" value="NATIONAL HANDLOOM DAY AUGUST KARNATAKA, Bengaluru">
                         </div>
                     </div>
                 </div>
                 <div class="component-8">
-                    <div class="ellipse-wrapper"><input type="checkbox" name="event10" value="event10"></div>
+                    <div class="ellipse-wrapper"><input type="checkbox" name="event10" value="NATIONAL HANDLOOM DAY AUGUST GUJARAT, Gandhi Nagar"></div>
                 </div>
                 <div class="component-9">
-                    <div class="ellipse-wrapper"><input type="checkbox" name="event11" value="event11"></div>
+                    <div class="ellipse-wrapper"><input type="checkbox" name="event11" value="NATIONAL HANDLOOM DAY AUGUST RAJASTHAN, Jaipur"></div>
                 </div>
                 <div class="component-10">
-                    <div class="ellipse-wrapper"><input type="checkbox" name="event12" value="event12"></div>
+                    <div class="ellipse-wrapper"><input type="checkbox" name="event12" value="NATIONAL HANDLOOM DAY AUGUST JHARKHAND, Ranchi"></div>
                 </div>
                 <div class="component-11">
-                    <div class="ellipse-wrapper"><input type="checkbox" name="event13" value="event13"></div>
+                    <div class="ellipse-wrapper"><input type="checkbox" name="event13" value="NATIONAL HANDLOOM DAY AUGUST TAMIL NADU, Chennai"></div>
                 </div>
                 <div class="text-wrapper-15">WAR OF CREATIVE MINDS</div>
                 <div class="text-wrapper-16">MARCH</div>
@@ -197,44 +197,80 @@
             <div class="right-side">
               <div class="topic-text">Personal Details</div>
 
-            <form action="https://script.google.com/macros/s/AKfycbxS19_4VypEHKAPyX6ZEmKd1aZBNMOOdzq8pggM85oIgxOVFN9gztPheAw1KN-VyCTl/exec" method='post' name="details-form">
+            <form  name="submit-to-google-sheet">
               <div class="input-box">
-                <input type="text" name="name" placeholder="Enter your name">
+                <input type="text" name="name" placeholder="Enter your name" required>
               </div>
               <div class="input-box">
-                <input type="email" name="email" placeholder="Enter your email">
+                <input type="email" name="email" placeholder="Enter your email" required>
               </div>
               <div class="input-box">
-                  <input type="text" name="gender" placeholder="Gender">
+                  <input type="text" name="gender" placeholder="Gender" required>
               </div>
               <div class="input-box option">
-                  <input type="date" name="date" placeholder="Date Of Birth">
+                  <input type="date" name="date" placeholder="Date Of Birth" required>
               </div>
               <div class="input-box">
-                  <input type="text" name="address" placeholder="City,Address">
+                  <input type="text" name="address" placeholder="City,Address" required>
               </div>
               <div class="input-box">
-                  <input type="text" name="brandName" placeholder="Brand Name ">
+                  <input type="text" name="brandName" placeholder="Brand Name " required>
               </div>
               <div class="input-box">
-                  <input type="text" name="instaId" placeholder="Insta Id">
+                  <input type="text" name="instaId" placeholder="Insta Id" required>
               </div>
               <div class="input-box">
-                  <select class="input-box" name="experience" >
+                  <select class="input-box" name="experience" required >
                       <option disabled selected value="">Experience</option>
-                      <option class="optionr" value="volvo1">Upcoming Designers Upto 0-3 Experience</option>
-                      <option class="optionr" value="v3">Emerging Designers Upto 0-9 Year Experience</option>
-                      <option class="optionr" value="volvo2">Established Designer above 9 Years of Experience</option>
+                      <option class="optionr" value="0-3">Upcoming Designers Upto 0-3 Experience</option>
+                      <option class="optionr" value="0-9">Emerging Designers Upto 0-9 Year Experience</option>
+                      <option class="optionr" value="9+">Established Designer above 9 Years of Experience</option>
                   </select>
               </div>
               <div class="button">
-                <input type="submit" value="Submit" id="Submit" >
+                <button type="submit" >Submit</button>
               </div>
             </form>
           </div>
           </div> 
         </div>
-   <script src="Google Sheet.js"></script>
+          
+            
+
+          <script>
+
+
+
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzf1usZstKsP2-a2GKUYLnjc714fgeKHorZRT_2FpXjdUscOfnigtMvQKIS7V5k3uoC/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+
+                            // Collect the values of the checkboxes
+                const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+                const checkboxValues = Array.from(checkboxes).map(checkbox => checkbox.value);
+
+                // Get form data
+                const formData = new FormData(form);
+
+                // Append checkbox values to form data
+                checkboxValues.forEach(value => {
+                formData.append(`${value}`, value);
+                });
+
+              fetch(scriptURL, { method: 'POST', body: formData})
+                .then(response => {
+                    alert("data successfully submited")
+                    form.reset();
+                })
+                .catch(error => {
+                    warning("Data not submitted !!")
+                })
+            })
+          </script>
+
 
     </body>
    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
