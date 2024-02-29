@@ -227,12 +227,13 @@
 
 .desktop .navbar {
     position: absolute;
-    width: 1458px;
+    width: 100%;
     height: 52px;
     top: 459px;
     left: -7px;
     background-color: #dfc158;
     border-radius: 8px;
+    
 }
 
 .desktop .text-wrapper-10 {
