@@ -752,11 +752,11 @@
 
 
 /* Media query for screens above 1500px width */
-@media screen and (min-width: 1500px) {
+/* @media screen and (min-width: 1500px) {
     .desktop .div {
         margin-left: 6.5rem;
     }
-}
+} */
 
 @media screen and (min-width: 1800px) {
     .desktop .div {
