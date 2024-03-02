@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+}
+
+.fullscreen{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1%;
+    width: 98%;
+}
+
+/*-------------------------------------------------- Banner css ------------------------------------------------------------ */
+
+.banner{
+    background-color: antiquewhite;
+    width: 96%;
+    height: 20vh;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.leftbox{
+    width: 52%;
+    height: 100%;
+    background-color: #dfc158;
+}
+
+.textleft{
+    visibility: hidden;
+    font-size:1;
+}
+
+.oi{
+    display: flex;
+    flex-direction:row;
+    margin: 15px;
+    float: right;
+    position: relative;
+    top: 5%;
+}
+
+.one{
+    rotate: -90deg;
+}
+
+.rightbox{
+    width: 48%;
+}
+
+.textright{
+    visibility: hidden;
+    font-size:1;
+}
+
+.of{
+    display: flex;
+    flex-direction: row;
+    color: darkgoldenrod;
+    min-height: 10%;
+    position: relative;
+    top: 15%;
+}
+
+.blackbox{
+    position: relative;
+    top: -20%;
+    left: -10px;
+    width: 100%;
+    height: 45%;
+    background-color: black;
+}
+
+.oiof{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 32.5%;
+    top: 12%;
+    width: 35%;
+}
+
+.o-i{
+    font-size: larger;
+    position: relative;
+    margin: 5px;
+}
+
+.o-f{
+    font-size: large;
+    color: white;
+    position: relative;
+    margin: 5px;
+}
+
+.wdf-img{
+    width: 19%;
+    background-color: black;
+    position: relative;
+    top: 41%;
+    right: 10%;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+.wcl-logo{
+    width: 20%;
+    position: relative;
+    left: 66%;
+    bottom: 32%;
+    border-radius: 50%;
+    border-color: #dfc158;
+    border-style: solid;
+    visibility: hidden;
+}
+
+@media screen and (min-width:277px) {
+    .blackbox{
+        top: -3%;
+    }
+}
+
+@media screen and (min-width:377px) {
+    .blackbox{
+        top: 15%;
+    }
+}
+
+@media screen and (min-width:420px) {
+
+    .o-i{
+        font-size: xx-large;
+    }
+
+    .o-f{
+        font-size: xx-large;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .textleft{
+        visibility: visible;
+        font-size: 0.5rem;
+        position: relative;
+        bottom: 30%;
+        left: 10%;
+    }
+
+    .textright{
+        visibility: visible;
+        font-size: 0.5rem;
+        padding-left: 62%;
+    }
+
+    .oiof{
+        left:32%;
+    }
+
+    .wdf-img{
+        visibility: visible;
+    }
+
+    .wcl-logo{
+        visibility: visible;
+    }
+}
+
+@media screen and (min-width:770px) {
+    .textleft{
+        bottom: 60px;
+        left: 10%;
+    }
+    
+    .wdf-img{
+        top: 34%;
+        right: 7%;
+    }
+
+    .textright{
+        padding-left: 65%;
+    }
+
+}
+
+@media screen and (min-width:1000px) {
+    .textleft{
+        bottom: 60px;
+        left: 10%;
+        font-size: small;
+    }
+    
+    .wdf-img{
+        top: 34%;
+        right: 7%;
+    }
+
+    .textright{
+        padding-left: 65%;
+        font-size: small;
+    }
+
+}
+
+@media screen and (min-width:1100px) {
+    .textleft{
+        bottom: 100px;
+        left: 92px;
+        font-size: medium;
+    }
+    
+    .wdf-img{
+        width: 130px;
+        right: 34px;
+    }
+
+    .wcl-logo{
+        width: 130px;
+    }
+
+    .textright{
+        padding-left: 60%;
+        font-size: medium;
+    }
+
+}
+
+/*-------------------------------------------------- Banner css end ------------------------------------------------------------ */
+
+
+/*-------------------------------------------------- table and form css ------------------------------------------------------------ */
+
+.check-th{
+    padding-left: 1rem;
+}
+
+.head-table{
+    background-color: #dfc158;
+    height: 2.5rem;
+    font-weight: 700;
+}
+
+.data-table{
+    border-bottom:#dfc158 solid 2px;
+    margin-top: 5rem;
+}
+
+.td-head{
+    font-weight: 500;
+    transition: transform .2s;
+}
+
+.td-head:hover{
+    color:#dfc158;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.container{
+    margin-top: 3rem;
+}
+
+.table-main{
+    
+    margin-top: 2.5rem;
+    margin: auto;
+    width: auto;
+    font-size: 0.35rem;
+}
+
+td{
+    padding-left: 5px;
+}
+
+
+.main{
+    width: 100%;
+    margin-top: 5rem;
+}
+
+p {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.check {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.check input[type="checkbox"]:checked{
+    -webkit-appearance: none;
+    background-color: #dfc158;
+    border-radius: 50%;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (min-width:300px) {
+    .table-main{
+       font-size: 0.5rem;
+       width: 100%;
+    }
+
+    p{
+        padding-top: 0;
+    }
+}
+
+
+@media screen and (min-width:600px) {
+    .table-main{
+        font-size: 1rem;
+    }
+ 
+    p{
+        margin-top: 1.6rem;
+    }
+
+    .check {
+        padding-top: 1rem;
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+
+    .check input{
+        width: 20px;
+        height: 20px;
+    
+    }
+}
+
+@media screen and (min-width:800px) {
+    .table-main{
+        font-size: larger;
+    }
+
+}
+
+@media screen and (min-width:1000px) {
+    .table-main{
+        font-size: x-large;
+    }
+    p {
+        margin-top: 1.785rem;
+    }
+    .check{
+        padding-top: 1.5rem;
+    }
+    
+
+}
+
+@media screen and (min-width:1201px) {
+    .check{
+        padding-top: 0.6rem;
+    }
+    
+    .check input{
+        width: 30px;
+        height: 30px;
+    
+    }
+
+}
+
+@media screen and (min-width:1201px) {
+    .check{
+        padding-top: 1rem;
+    }
+
+}
+
+@media screen and (min-width:2000px) {
+    .table-main{
+        font-size: xx-large;
+    }
+}
+
+
+/*-------------------------------------------------- table and form css end ------------------------------------------------------------ */
