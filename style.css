@@ -140,6 +140,7 @@ body{
 
 .headingtext{
     background: linear-gradient(180deg, rgb(223, 193, 88) 0%, rgb(49.94, 49.94, 49.94) 100%);
+    background-clip: text !important;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
@@ -347,11 +348,21 @@ p {
     padding-bottom: 0;
 }
 
-.check input[type="checkbox"]:checked{
+/* .check input[type="checkbox"]:checked{
     -webkit-appearance: none;
     background-color: #dfc158;
     border-radius: 50%;
+} */
+
+input[type=checkbox]{
+    accent-color:  #dfc158;  
 }
+
+@supports (accent-color: #fff0ba) {
+    .info {
+      display: none;
+    }
+  }
 
 .container {
     margin-left: auto;
