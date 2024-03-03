@@ -91,14 +91,14 @@ body{
 
 .o-i{
     font-size: larger;
-    font-weight: bolder;
+    font-weight:500;
     position: relative;
     margin: 4px;
 }
 
 .o-f{
     font-size: large;
-    font-weight: bolder;
+    font-weight:500;
     color: white;
     position: relative;
     margin: 5px;
@@ -139,153 +139,14 @@ body{
 }
 
 .headingtext{
-    background: linear-gradient(180deg, rgb(223, 193, 88) 0%, rgb(49.94, 49.94, 49.94) 100%);
-    background-clip: text !important;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
     font-family: "Inknut";
     font-weight: 700;
-    color: transparent;
-    font-size: 40px;
+    color: darkgoldenrod;
+    font-size: 40px; 
     letter-spacing: 0;
     line-height: normal;
     text-align: center;
 }
-
-@media screen and (min-width:283px) {
-    .blackbox{
-        top: -9%;
-    }
-}
-
-@media screen and (min-width:381px) {
-    .blackbox{
-        top: 14%;
-    }
-    
-    .o-i{
-        margin: 5px;
-    }
-}
-
-@media screen and (min-width:420px) {
-
-
-    .oi{
-        top: 3%;
-    }
-    .o-i{
-        font-size: xx-large;
-    }
-
-    .o-f{
-        font-size: xx-large;
-    }
-
-    .oiof{
-        top: 12%;
-    }
-}
-
-@media screen and (min-width:600px) {
-    .textleft{
-        visibility: visible;
-        font-size: 0.5rem;
-        position: relative;
-        bottom: -4px;
-        left: 9%;
-    }
-
-    .textright{
-        visibility: visible;
-        font-size: 0.5rem;
-        padding-left: 62%;
-    }
-
-    .oiof{
-        left:32%;
-    }
-
-    .wdf-img{
-        visibility: visible;
-    }
-
-    .wcl-logo{
-        visibility: visible;
-    }
-
-    .img-year{
-        height: 35px;
-    }
-}
-
-@media screen and (min-width:770px) {
-    .textleft{
-        bottom: 0px;
-        left: 9%;
-    }
-    
-    .wdf-img{
-        top: 34%;
-        right: 7%;
-    }
-
-    .textright{
-        padding-left: 65%;
-    }
-
-}
-
-@media screen and (min-width:1000px) {
-    .textleft{
-        bottom: 12px;
-        left: 12%;
-        font-size: small;
-    }
-    
-    .wdf-img{
-        top: 34%;
-        right: 7%;
-    }
-
-    .textright{
-        padding-left: 65%;
-        font-size: small;
-    }
-
-    .img-year{
-        height: 45px;
-    }
-}
-
-@media screen and (min-width:1100px) {
-    .textleft{
-        bottom: 23px;
-        left: 92px;
-        font-size: medium;
-    }
-    
-    .wdf-img{
-        width: 130px;
-        right: 34px;
-    }
-
-    .wcl-logo{
-        width: 130px;
-    }
-
-    .textright{
-        padding-left: 64%;
-        font-size: medium;
-    }
-
-    .img-year{
-        height: 55px;
-    }
-
-}
-
 /*-------------------------------------------------- Banner css and heading end ------------------------------------------------------------ */
 
 /*-------------------------------------------------- table and form css ------------------------------------------------------------ */
@@ -339,8 +200,8 @@ td{
 }
 
 p {
-    padding-top: 0.25rem;
     padding-bottom: 0.25rem;
+    margin-bottom: 0;
 }
 
 .check {
@@ -348,11 +209,45 @@ p {
     padding-bottom: 0;
 }
 
-/* .check input[type="checkbox"]:checked{
-    -webkit-appearance: none;
-    background-color: #dfc158;
-    border-radius: 50%;
-} */
+.c1{
+    padding-top: 2px;
+    padding-bottom: 0;
+}
+
+.c2{
+    padding-top: 0;
+    padding-bottom: 4px;
+}
+
+.c3{
+    padding-top: 0;
+    padding-bottom: 4px;
+}
+
+.c4{
+    padding-top: 0;
+    padding-bottom: 9px;
+}
+
+.c5{
+    padding-top: 0;
+    padding-bottom: 8px;
+}
+
+.c6{
+    padding-top: 2px;
+    padding-bottom: 4px;
+}
+
+.c7{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.c8{
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
 
 input[type=checkbox]{
     accent-color:  #dfc158;  
@@ -371,31 +266,167 @@ input[type=checkbox]{
     padding-right: 10px;
 }
 
+/*  media queries */
+
+@media screen and (min-width:213px) {
+    p{
+        padding-top: 2px;
+    }
+    
+
+    .c4{
+        padding-top: 0;
+        padding-bottom: 9px;
+    }
+
+    .c7{
+        padding-top: 0;
+        padding-bottom: 8px;
+    }
+
+    .c8{
+        padding-top: 0;
+        padding-bottom: 2px;
+    }
+    
+}
+
+
+@media screen and (min-width:283px) {
+    .blackbox{
+        top: -9%;
+    }
+
+    p{
+        padding-top: 5px;
+    }
+
+}
+
 @media screen and (min-width:300px) {
     .table-main{
        font-size: 0.5rem;
        width: 100%;
     }
 
+
+    .place{
+        padding-bottom: 0;
+    }
+
     p{
+        padding-top: 1px;
+    }
+
+
+}
+
+@media screen and (min-width:381px) {
+    .blackbox{
+        top: 14%;
+    }
+    
+    .o-i{
+        margin: 5px;
+    }
+    .place{
+        padding-bottom: 1px;
+    }
+}
+
+@media screen and (min-width:398px) {
+    .place{
+        padding-bottom: 2px;
+    }
+}
+
+@media screen and (min-width:420px) {
+
+    .oi{
+        top: 3%;
+    }
+    .o-i{
+        font-size: xx-large;
+    }
+
+    .o-f{
+        font-size: xx-large;
+    }
+
+    .oiof{
+        top: 12%;
+    }
+}
+
+
+@media screen and (min-width:430px) {
+    .place{
+        padding-bottom: 5px;
+    }
+    
+    .c2{
+        padding-top: 5px;
+        padding-bottom: 4px;
+    }
+     
+    .c3{
         padding-top: 0;
+        padding-bottom: 0;
+    }   
+
+    .c4{
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+    
+    .c5{
+        padding-top: 0;
+        padding-bottom: 3px;
+    }
+    
+    .c6{
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    
+    .c7{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (min-width:457px) {
+    .c3{
+        padding-top: 3px;
+    } 
+
+    .c4{
+        padding-top: 6px;
+        padding-bottom: 1px;
+    }
+
+    .c5{
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (min-width:475px) {
+ 
+    .c1,.c2, .c3,.c4,.c5,.c6,.c7,.c8{
+        padding-top: 0;
+        padding-bottom: 2px;
     }
 }
 
 
 @media screen and (min-width:600px) {
     .table-main{
-        font-size: 1rem;
-    }
- 
-    p{
-        margin-top: 1.6rem;
+        font-size: 0.6rem;
     }
 
-    .check {
-        padding-top: 1rem;
-        padding-bottom: 0;
-        margin-top: 0;
+    .place{
+        padding-top: 6px;
+        padding-bottom: 6px;
     }
 
     .check input{
@@ -403,32 +434,136 @@ input[type=checkbox]{
         height: 20px;
     
     }
+        
+    .textleft{
+        visibility: visible;
+        font-size: 0.5rem;
+        position: relative;
+        bottom: -4px;
+        left: 9%;
+    }
+
+    .textright{
+        visibility: visible;
+        font-size: 0.5rem;
+        padding-left: 62%;
+    }
+
+    .oiof{
+        left:32%;
+    }
+
+    .wdf-img{
+        visibility: visible;
+    }
+
+    .wcl-logo{
+        visibility: visible;
+    }
+
+    .img-year{
+        height: 35px;
+    }
+}
+
+@media screen and (min-width:770px) {
+    .textleft{
+        bottom: 0px;
+        left: 9%;
+    }
+    
+    .wdf-img{
+        top: 34%;
+        right: 7%;
+    }
+
+    .textright{
+        padding-left: 65%;
+    }
+
 }
 
 @media screen and (min-width:800px) {
     .table-main{
-        font-size: larger;
+        font-size:13px;
+    }
+    .check {
+        padding-bottom: 0.2rem;
+        padding-top: 3px;
     }
 
 }
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:1000px) {    
     .table-main{
-        font-size: x-large;
+        font-size:17px;
     }
     p {
-        margin-top: 1.785rem;
+        margin-top: 0;
+        padding-top: 0 ;
     }
     .check{
-        padding-top: 1.5rem;
+        padding-top: 7px;
+    }
+    .textleft{
+        bottom: 12px;
+        left: 12%;
+        font-size: small;
     }
     
+    .wdf-img{
+        top: 34%;
+        right: 7%;
+    }
+
+    .textright{
+        padding-left: 65%;
+        font-size: small;
+    }
+
+    .img-year{
+        height: 45px;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .textleft{
+        bottom: 23px;
+        left: 92px;
+        font-size: medium;
+    }
+    
+    .wdf-img{
+        width: 130px;
+        right: 34px;
+    }
+
+    .wcl-logo{
+        width: 130px;
+    }
+
+    .textright{
+        padding-left: 64%;
+        font-size: medium;
+    }
+
+    .img-year{
+        height: 55px;
+    }
 
 }
 
+/* table and form media queries */
+
+
+
 @media screen and (min-width:1201px) {
+    .table-main{
+        font-size:20px;
+    }
     .check{
-        padding-top: 0.6rem;
+        padding-top: 2px;
+        padding-bottom: 2px;
     }
     
     .check input{
@@ -439,16 +574,15 @@ input[type=checkbox]{
 
 }
 
-@media screen and (min-width:1201px) {
-    .check{
-        padding-top: 1rem;
-    }
-
-}
-
 @media screen and (min-width:2000px) {
     .table-main{
         font-size: xx-large;
+    }
+    .place{
+        padding-top: 0;
+    }
+    .check{
+        padding-bottom: 0.45rem;
     }
 }
 
