@@ -110,8 +110,13 @@ body{
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.button input[type="button"]:hover{
-  background: #dfc158;
+
+.button button[type="submit"]:hover{
+  background: gold;
+}
+
+.button button[type="submit"]:disabled{
+  background: gray;
 }
 
 @media (max-width: 950px) {

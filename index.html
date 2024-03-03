@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>World Desinging Forum</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
@@ -59,6 +59,16 @@
             <span class="o-f"> O F</span>
         </div>
 
+        <!----------------- heading   ------------------------------>
+
+        <div class="heading">
+            <img class="img-year" data-aos="flip-down" src="image-year.png" />
+            <div class="headingtext" data-aos="fade-up" data-aos-duration="3000">
+                Choose Your Event
+            </div>
+        </div>
+
+        <!----------------- heading ended   ------------------------------>
 
         <!----------------- table and form   ------------------------------>
         <div class="main">
@@ -204,7 +214,7 @@
               </select>
           </div>
           <div class="button">
-            <button type="submit" >Submit</button>
+            <button id="submitButton" type="submit" >Submit</button>
           </div>
         </form>
       </div>
@@ -222,11 +232,17 @@
 
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzf1usZstKsP2-a2GKUYLnjc714fgeKHorZRT_2FpXjdUscOfnigtMvQKIS7V5k3uoC/exec'
     const form = document.forms['submit-to-google-sheet']
+    const submitButton = form.querySelector('button[type="submit"]');
   
     form.addEventListener('submit', e => {
-      e.preventDefault()
 
-                    // Collect the values of the checkboxes
+        e.preventDefault();
+
+         // Disable the submit button to prevent multiple submissions
+        submitButton.disabled = true;
+
+
+        // Collect the values of the checkboxes
         const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
         const checkboxValues = Array.from(checkboxes).map(checkbox => checkbox.value);
 
@@ -244,8 +260,13 @@
             form.reset();
         })
         .catch(error => {
-            warning("Data not submitted !!")
+            alert("Data not submitted !!")
         })
+        .finally(() => {
+        // Re-enable the submit button after form submission
+        submitButton.disabled = false;
+        });
+
     })
   </script>
 
