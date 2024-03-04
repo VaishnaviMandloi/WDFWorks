@@ -210,43 +210,43 @@ p {
 }
 
 .c1{
-    padding-top: 2px;
+    padding-top: 6px;
     padding-bottom: 0;
 }
 
 .c2{
     padding-top: 0;
-    padding-bottom: 4px;
+    padding-bottom: 0;
 }
 
 .c3{
-    padding-top: 0;
-    padding-bottom: 4px;
+    padding-top: 1px;
+    padding-bottom: 6px;
 }
 
 .c4{
     padding-top: 0;
-    padding-bottom: 9px;
+    padding-bottom: 2px;
 }
 
 .c5{
     padding-top: 0;
-    padding-bottom: 8px;
+    padding-bottom: 13px;
 }
 
 .c6{
-    padding-top: 2px;
-    padding-bottom: 4px;
+    padding-top: 0;
+    padding-bottom: 2px;
 }
 
 .c7{
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 5px;
 }
 
 .c8{
     padding-top: 1px;
-    padding-bottom: 2px;
+    padding-bottom: 16px;
 }
 
 input[type=checkbox]{
@@ -292,6 +292,24 @@ input[type=checkbox]{
     
 }
 
+@media screen and (min-width:273px){
+
+    .c2{
+        padding-top: 0;
+        padding-bottom: 4px;
+    }
+
+    .c5{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .c7{
+        padding-top: 0;
+        padding-bottom: 11px;
+    }
+
+}
 
 @media screen and (min-width:285px) {
     .blackbox{
@@ -300,6 +318,46 @@ input[type=checkbox]{
 
     p{
         padding-top: 5px;
+    }
+
+    .c1{
+        padding-top: 2px;
+        padding-bottom: 0;
+    }
+    
+    .c2{
+        padding-top: 0;
+        padding-bottom: 4px;
+    }
+    
+    .c3{
+        padding-top: 0;
+        padding-bottom: 4px;
+    }
+    
+    .c5{
+        padding-top: 0;
+        padding-bottom: 8px;
+    }
+    
+    .c6{
+        padding-top: 2px;
+        padding-bottom: 4px;
+    }
+
+    .c4{
+        padding-top: 0;
+        padding-bottom: 9px;
+    }
+
+    .c7{
+        padding-top: 0;
+        padding-bottom: 8px;
+    }
+
+    .c8{
+        padding-top: 0;
+        padding-bottom: 2px;
     }
 
 }
