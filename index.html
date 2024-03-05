@@ -194,9 +194,16 @@
           <div class="input-box">
             <input  type="email" name="email"  placeholder="Enter your email" required>
           </div>
-          <div class="input-box">
+          <!-- <div class="input-box">
               <input type="text" name="gender" placeholder="Gender" required>
-          </div>
+          </div> -->
+            <select class="input-box" name="gender" required>
+              <option disabled selected value="">Gender</option>
+              <option class="optionr" value="female">Female</option>
+              <option class="optionr" value="male">Male</option>
+              <option class="optionr" value="other">Other</option>
+            </select>
+
           <div class="input-box option">
               <input type="date" name="date" placeholder="Date Of Birth" required>
           </div>
@@ -209,14 +216,12 @@
           <div class="input-box">
               <input type="text" name="instaId" placeholder="Insta Id" required>
           </div>
-          <div class="input-box">
               <select class="input-box" name="experience" required>
                 <option disabled selected value="">Experience</option>
                 <option class="optionr" value="0-3">Upcoming Designers Upto 0-3 Experience</option>
                 <option class="optionr" value="0-9">Emerging Designers Upto 0-9 Year Experience</option>
                 <option class="optionr" value="9+">Established Designer above 9 Years of Experience</option>
               </select>
-          </div>
           <div class="button">
             <button id="submitButton" type="submit" >Submit</button>
           </div>
